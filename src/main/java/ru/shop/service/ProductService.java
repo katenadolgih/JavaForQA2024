@@ -3,13 +3,14 @@ package ru.shop.service;
 
 import ru.shop.model.Product;
 import ru.shop.model.ProductType;
+import ru.shop.repository.IRepository;
 import ru.shop.repository.ProductRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductService {
-    private final ProductRepository repository;
+public class ProductService  implements IService<Product>{
+    private final IRepository<Product> repository;
 
 
     public ProductService(ProductRepository repository) {
