@@ -21,4 +21,5 @@ public class Order {
     UUID productId;
     long count;
     long amount;
+
 }
